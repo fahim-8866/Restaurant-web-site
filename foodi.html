@@ -291,10 +291,84 @@
         
         
         <section id="services">
-
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-md-6 service_heading">
+                <small class="text-danger">Our Story & Services</small>
+                <h1 class="mb-4">Our Culinary Journey <br> And Services</h1>
+                <p class="mb-4 text-secondary">Rooted in passion, we curate unforgettable dining <br> experiences and offer exceptional services, <br> blending culinary artistry with warm hospitality.</p>
+                <a href="#" class="btn rounded-5">Explore</a>
+              </div>
+              <div class="col-md-6">
+                <div class="service_card">
+                    <div class="service_card1">
+                      <img src="imgesfigma/service 1.png" class="img-fluid" alt="">
+                      <h6 class="mt-4">Catering</h6>
+                      <p>Delight your guests <br> with our flavors and <br> presentation</p>
+                    </div>
+                    <div class="service_card1">
+                      <img src="imgesfigma/service 2.png" class="img-fluid" alt="">
+                      <h6 class="mt-4">Catering</h6>
+                      <p>Delight your guests <br> with our flavors and <br> presentation</p>
+                    </div>
+                </div>
+                <div class="service_card">
+                  <div class="service_card1">
+                    <img src="imgesfigma/service 3.png" class="img-fluid" alt="">
+                    <h6 class="mt-4">Catering</h6>
+                    <p>Delight your guests <br> with our flavors and <br> presentation</p>
+                  </div>
+                  <div class="service_card1">
+                    <img src="imgesfigma/service 4.png" class="img-fluid" alt="">
+                    <h6 class="mt-4">Catering</h6>
+                    <p>Delight your guests <br> with our flavors and <br> presentation</p>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
         </section>
         
-        <footer></footer>
+        <footer>
+          <div class="container mt-5">
+            <div class="row gy-2">
+              <div class="col-md-3 footer_logo">
+                <h5 class="mb-4"><span>F</span>OODI</h5>
+                <p>Savor the artistry where <br> every dish is a culinary <br> masterpiece</p>
+              </div>
+              <div class="col-md-3">
+                <h5>Useful links</h5>
+                <a href="#" class="d-block text-decoration-none text-secondary mb-2">About us</a>
+                <a href="#" class="d-block text-decoration-none text-secondary mb-2">Events</a>
+                <a href="#" class="d-block text-decoration-none text-secondary mb-2">Blogs</a>
+                <a href="#" class="d-block text-decoration-none text-secondary mb-2">FAQ</a>
+              </div>
+              <div class="col-md-3">
+                <h5>Main Menu</h5>
+                <a href="#" class="d-block text-decoration-none text-secondary mb-2">Home</a>
+                <a href="#" class="d-block text-decoration-none text-secondary mb-2">Offers</a>
+                <a href="#" class="d-block text-decoration-none text-secondary mb-2">Menus</a>
+                <a href="#" class="d-block text-decoration-none text-secondary mb-2">Reservation</a>
+              </div>
+              <div class="col-md-3">
+                <h5>Contact Us</h5>
+                <a href="#" class="d-block text-decoration-none text-secondary mb-2">foodi.bd@gmail.com</a>
+                <a href="#" class="d-block text-decoration-none text-secondary mb-2">+64 958 248 966</a>
+                <a href="#" class="d-block text-decoration-none text-secondary  mb-2">Social media</a>
+              </div>
+            </div>
+
+            <div class="icone mt-5 d-flex">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+              <div class="copyright mt-2">
+                <p class="">Copyright &copy;2023 Dscode | All rights reserved</p>
+              </div>
+            </div>
+          </div>
+        </footer>
     </main>
     
 
@@ -305,7 +379,7 @@
     <script>
        var swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
-      spaceBetween: 10,
+      spaceBetween: 5,
       speed: 1000,
       pagination: {
         el: ".swiper-pagination",
@@ -316,6 +390,24 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+
+      breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    550: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    750: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  },
     });
     </script>
    
