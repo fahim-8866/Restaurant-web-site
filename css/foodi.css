@@ -269,10 +269,83 @@ header nav a .foodi_head{
 }
 
 /* cheif section  */
-#cheif .cheif_img img{
-    height: 500px;
-    margin-left: 30px;
+.cheif_img img{
+    height: 318px;
+    
 }
-.cheif_heading small{
-    margin-top: 100px;
+.cheif_img{
+    position: relative;
+    display: flex;
+    margin-top: 110px;
+}
+.cheif{
+    position: absolute;
+    left: 34px;
+    bottom: 0px;
+
+}
+.cheif img{
+    height: 500px;
+}
+.best_chefCard{
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px rgb(196, 190, 190);
+    height: 38px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 109px;
+    border-radius: 19px;
+}
+.chef_pizzaIcon{
+    position: absolute;
+    right: 178px;
+    top: 74px;
+}
+.chef_pizzaIcon img{
+   width: 40px;
+   height: 40px;
+}
+.emoji img{
+    height: 40px;
+    
+}
+.emoji{
+    position: absolute;
+    top: 113px;
+    left: -19px;
+}
+
+
+.cheif_heading small{ 
+    display: block;
+    margin-top: 110px;
+}
+.costo_img img{
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    border: 3px solid white;
+}
+.costo_img{
+    position: relative;
+}
+.custo_img2{
+    position: absolute;
+    left: 32px;
+    top: -1px;
+}
+.custo_img3{
+    position: absolute;
+    left: 62px;
+    top: -1px;
+}
+.customers{
+    display: flex;
+    gap: 90px;
+}
+.custo_1st{
+    background-color: #FFE8AD;
 }
