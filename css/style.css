@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Signika:wght@300..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Merriweather Sans", serif;
+    /* overflow: hidden; */
+    
+}
+.logo_f{
+    padding: 3px;
+    background-color: rgb(0, 255, 0);
+    color: white;
+    border-radius: 8px;
+    display: inline-block;
+    width: 28px;
+    text-align: center;
+}
+
+.navbar_items ul li{
+   padding: 5px;
+}
+
+.search i{
+    font-size: 22px;
+    margin-right: 20px;
+}
+.fa-phone-volume{
+    margin-right: 5px;
+}
+.ContactNav_btn{
+    background-color: rgb(0, 255, 0);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
+    border: none;
+    transition: transform 0.2s ease; 
+    overflow: hidden;
+    cursor: pointer;;
+    text-decoration: none;
+}
+
+
+.btn_active:active{
+    transform: scale(0.95);
+}
+
+/* navbar end  */
+
+
+/* hero section start  */
+/* hero left part  */
+.hero_heading{
+  margin-top: 230px;
+}
+.hero_heading h1{
+  font-size: 50px;
+}
+
+.order_btn{
+  background-color: rgb(0, 255, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+}
+.order_btn:active{
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+
+.video_btn:hover{
+  background-color: slategrey;
+  opacity: 0.7;
+  color: black;
+}
+.play_btn{
+  border-radius: 50%;
+  width: 55px;
+  border: none;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.822);
+  background-color: white;
+  /* border: 1px solid #fff; */
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.212), 0 0 0 0 rgba(255, 0, 0, 0.212);
+    
+  }
+  50%{
+   
+    
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.801), 0 0 0 40px rgba(255, 255, 255, 0.123);
+  }
+  100%{
+    
+    box-shadow: 0 0 0 20px #fff4, 0 0 0 40px #fff4;
+  }
+} 
+
+
+/* hero left part  */
+
+/* hero right part  */
+.person_img{
+  /* width: 50%; */
+  height: 600px;
+  display: block;
+  margin: auto;
+}
+.hero_right{
+  position: relative;
+}
+.hero_card{
+  position: absolute;
+  bottom: 13px;
+  left: 84px;
+}
+.hero_card2{
+  position: absolute;
+  bottom: 13px;
+  right: 117px;
+}
+.hero_card2{
+  box-shadow: 0px 4px 10px rgba(20, 20, 20, 0.486);
+  background-color: white;
+  width: 250px;
+  height: 90px;
+  border-radius: 15px;
+}
+.hero_card{
+  box-shadow: 0px 4px 10px rgba(20, 20, 20, 0.486);
+  background-color: white;
+  width: 250px;
+  height: 90px;
+  border-radius: 15px;
+}
+/* hero right part  */
+
+
+
+/* popular catagory part  */
+#popular_category .card{
+  height: 240px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.main_food{
+  width: 130px;
+  height: 127px;
+  display: block;
+  margin: auto;
+  background-color: #C1F1C6;
+  margin-top: 10px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* popular catagory part  */
+
+/* manu part  */
+#manu .card{
+  height: 450px;
+  border-radius: 20px;
+  position: relative;
+} 
+.Service_food{
+  display: block;
+  margin: auto;
+  padding: 20px;
+  height: 318px;
+}
+.fa-heart{
+  font-size: 20px;
+  text-align: center;
+}
+.add_card{
+  background-color: rgb(0, 255, 0);
+  width: 56px;
+  height: 51px;
+ text-align: center;
+  color: white;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 20px;
+}
+.add_card:hover{
+  opacity: 0.4;
+}
+/* service part  */
+
+/* testimonial part  */
+/* testimonial left part ------------- */
+.cheif_img{
+  display: block;
+  margin: auto;
+  width: 400px;
+  
+  /* position: relative; */
+}
+.testimocnial_left{
+  position: relative;
+}
+
+.cheif_background{
+  display: block;
+  width: 410px;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 145px;
+  z-index: -1;
+  overflow: hidden;
+}
+.cheif_pizza{
+  position: absolute;
+  bottom: 196px;
+  right: 82px;
+  
+}
+.emoji_img{
+  position: absolute;
+  bottom: 26%;
+  left: 18%;
+}
+/* testimonial left part ------------- */
+
+
+/* testimonial right part ------------ */
+.testimonial_right h2{
+  font-size: 40px;
+}
+.testimonial_right{
+  padding-top: 80px;
+}
+.customers img{
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.customer_rating{
+  margin-left: 100px;
+}
+.customers{
+  position: relative;
+}
+.customer1{
+  position: relative;
+}  
+.customer2{
+  position: absolute;
+  left: 35px;
+}  
+.customer3{
+  position: absolute;
+  left: 68px;
+}
+/* testimonial right part ----------- */
+/* testimonial part  */
+
+
+
+
+/* service part  */
+#services .explore_btn{
+  background-color: rgb(0, 255, 0);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+  width: 159px;
+  display: block;
+   
+}
+.explore_btn:active{
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+.service_heading h2{
+  font-size: 40px;
+}
+/* service part  */
+
+
+
+
+@media (max-width: 990px){
+  .hero_heading{
+    text-align: center;
+  }
+  .hero_heading{
+    margin-top: 30px;
+  }
+}
+
+
+@media (min-width: 1282px) and (max-width: 1398px) {
+  .hero_card{
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+  }
+  .hero_card2{
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+  }
+  .cheif_background{
+    left: 100px;
+  }
+  .cheif_pizza{
+    right: 40px;
+  }
+  .emoji_img{
+    left: 12%;
+  }
+}
+  
+
+
+
+@media (min-width: 1200px) and (max-width: 1280px) {
+  .hero_card{
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+  }
+  .hero_card2{
+    position: absolute;
+    bottom: 0;
+    right: 55px;
+  }
+  .cheif_background{
+    left: 95px;
+  }
+  .cheif_pizza{
+    right: 40px;
+  }
+  .emoji_img{
+    left: 12%;
+  } 
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+@media (min-width: 1025px) and (max-width: 1198px) {
+  .hero_card{
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+  }
+  .hero_card2{
+    position: absolute;
+    bottom: 35px;
+    right: 30px;
+  }
+  .cheif_background{
+    left: 50px;
+  } 
+  .cheif_pizza{
+    right: 0px;
+  }
+  .emoji_img{
+    left: 5%;
+  } 
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 990px) and (max-width: 1024px) {
+  .hero_card{
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+  }
+  .hero_card2{
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+  }
+  .cheif_background{
+    left: 50px;
+  }
+  .cheif_pizza{
+    right: 0px;
+  }
+  .emoji_img{
+    left: 5%;
+  }  
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 989px){
+  .hero_card{
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+  }
+  .hero_card2{
+    position: absolute;
+    bottom: 0;
+    right: 90px;
+  }
+  .cheif_background{
+    left: 0px;
+  }
+  .cheif_pizza{
+    right: -15px;
+    bottom: 160px;
+  }
+  .emoji_img{
+    left: -9%;
+  }  
+}
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 584px) and (max-width: 767px) {
+  .hero_card{
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+  }
+  .hero_card2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .cheif_background{
+    left: 80px;
+  }
+  .cheif_pizza{
+    right: 30px;
+  }
+  .emoji_img{
+    left: 10%;
+  }  
+   
+}
+@media (min-width: 481px) and (max-width: 583px) {
+  .hero_right{
+    display: none;
+  }
+  /* .cheif_background{
+    left: 90px;
+    width: 390px;
+  } */
+
+  .testimocnial_left{
+    display: none;
+  }
+  .emoji_img{
+    left: 10%;
+  } 
+}
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+@media (min-width: 320px) and (max-width: 480px) {
+  .hero_right{
+    display: none;
+  }
+  .testimocnial_left{
+    display: none;
+  }
+
+  /* .cheif_background{
+    left: 50px;
+    width: 390px;
+  } */
+}
