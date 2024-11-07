@@ -156,6 +156,7 @@ body{
   height: 240px;
   border-radius: 20px;
   padding: 10px;
+  cursor: pointer;
 }
 .main_food{
   width: 130px;
@@ -172,9 +173,10 @@ body{
 
 /* manu part  */
 #manu .card{
-  height: 450px;
+  /* height: 450px; */
   border-radius: 20px;
   position: relative;
+  cursor: pointer;
 } 
 .Service_food{
   display: block;
@@ -201,7 +203,36 @@ body{
 .add_card:hover{
   opacity: 0.4;
 }
-/* service part  */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-next{
+  display:block;
+  position: absolute;
+  right: -10px;
+}
+/* manu part  */
+
+
+
+
 
 /* testimonial part  */
 /* testimonial left part ------------- */
@@ -259,7 +290,7 @@ body{
   position: relative;
 }
 .customer1{
-  position: relative;
+  width: 50px;
 }  
 .customer2{
   position: absolute;
@@ -374,6 +405,13 @@ body{
   color: white;
 }
 /* footer part  */
+
+/* preloader part */
+
+/* preloader part */
+
+
+
 
 @media (max-width: 990px){
   .hero_heading{
@@ -508,6 +546,7 @@ body{
   }
   .cheif_background{
     left: 0px;
+    
   }
   .cheif_pizza{
     right: -15px;
@@ -522,6 +561,9 @@ body{
   }
   .copy_right{
     margin-top: 20px;
+  }
+  .cheif_img{
+    height: 700px;
   } 
 }
   
@@ -566,7 +608,7 @@ body{
     left: 90px;
     width: 390px;
   } */
-
+  
   .testimocnial_left{
     display: none;
   }
@@ -579,7 +621,11 @@ body{
   }
   .copy_right{
     margin-top: 20px;
-  }  
+  } 
+  .testimonial_right{
+    display: block;
+    padding-top: 3px;
+  }
 }
   
   /* 
@@ -608,5 +654,12 @@ body{
   }
   .copy_right{
     margin-top: 18px;
+  } 
+  .testimonial_right{
+    display: block;
+    padding-top: 3px;
+  }
+  .customer1{
+    height: 50px;
   } 
 }
