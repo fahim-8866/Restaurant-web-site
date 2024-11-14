@@ -416,6 +416,7 @@ body{
 
 
 /* manu page design -------------------- */
+
 .carousel-item img{
   height: 350px;
   background-size: cover;
@@ -447,9 +448,7 @@ body{
   width: 418px;
   display: block;
   margin: auto;
-  /* box-shadow: 2px 2px 20px rgba(110, 107, 107,0.50); */
-  
-  
+  box-shadow: 2px 2px 20px rgba(110, 107, 107,0.50);
 }
 
 
