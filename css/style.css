@@ -50,6 +50,9 @@ body{
     transform: scale(0.95);
 }
 
+.active{
+  color: rgb(83, 236, 98) !important;
+}
 /* navbar end  */
 
 
@@ -409,6 +412,45 @@ body{
 /* preloader part */
 
 /* preloader part */
+
+
+
+/* manu page design -------------------- */
+.carousel-item img{
+  height: 350px;
+  background-size: cover;
+  
+}
+.carousel .carousel-inner{
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 5px 30px rgb(66, 65, 65);
+}
+.food_item img{
+  width: 100px;
+  height: 90px;
+  border-radius: 20%;
+} 
+.humos{
+  width: 200px;
+  height: 90px;
+  border-radius: 20%;
+}
+.appetizer_left{
+  border-left: 3px dashed  rgb(83, 236, 98);
+}
+.appetizer_right{
+  border-left: 3px dashed  rgb(83, 236, 98);
+}
+.restaurent_background img{
+  height: 545px;
+  width: 418px;
+  display: block;
+  margin: auto;
+  /* box-shadow: 2px 2px 20px rgba(110, 107, 107,0.50); */
+  
+  
+}
 
 
 
