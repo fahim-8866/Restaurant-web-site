@@ -75,11 +75,13 @@
 
         <section id="Appetizer">
           <div class="container">
-            
+          
             <div class="row gy-3">
               <small class="text-center text-danger mt-5">- Our Menu -</small>
               <h2 class="text-center mt-3">Appetizer</h2>
+
               <div class="col-md-6 d-flex flex-column gap-3 appetizer_left">
+              <a href="" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                 <div class="food_item d-flex justify-content-evenly">
                   <img src="imgesfigma/rice bowl.jpg" alt="rice Bowl">
@@ -93,7 +95,50 @@
                     <span class="text-danger">$</span>10.00
                   </div>
                 </div>
+              </a>
+              
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Rice Bowl</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body popUp">
+                      <img src="imgesfigma/rice bowl.jpg" class="img-fluid" alt="rice Bowl">
+                      <p class="mt-2"><span class="fw-bold">Description:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, consequatur. Possimus quaerat architecto cupiditate esse consequatur eveniet totam, beatae sed aperiam ducimus blanditiis expedita vitae ratione, nesciunt debitis harum optio!</p>
+                      <div class="rate">
+                        <span class="fw-bold">Price: </span><span class="text-danger">$</span>10.00
+                      </div>
+                      
+                      <form action="">
+                        <div class="quantity mt-2">
+                          <a href="#" class="btn btn-outline-light text-dark minus"><i class="fa-solid fa-minus"></i></a>
+                          <input type="text" readonly value="1" class="text-center">
+                          <a href="#" class="btn btn-outline-light text-dark plus"><i class="fa-solid fa-plus"></i></a>
+                        </div>
 
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="exampleInputAddress" aria-describedby="emailHelp" placeholder="Enter Your Address">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                          <input type="text" class="form-control" id="exampleInputNumber" placeholder="Enter Your Moblie Number">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn border border-danger btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn border border-success btn-outline-success">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <a href="" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                 <div class="food_item d-flex justify-content-evenly">
                   <img src="imgesfigma/set menu 1.png" alt="rice Bowl">
                   <div class="heading ms-2">
@@ -106,7 +151,50 @@
                     <span class="text-danger">$</span>13.00
                   </div>
                 </div>
+              </a>
+              <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel1">Commbo Set</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body popUp">
+                      <img src="imgesfigma/set menu 1.png" alt="rice Bowl">
+                      <p class="mt-2"><span class="fw-bold">Description:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, consequatur. Possimus quaerat architecto cupiditate esse consequatur eveniet totam, beatae sed aperiam ducimus blanditiis expedita vitae ratione, nesciunt debitis harum optio!</p>
+                      <div class="rate">
+                        <span class="fw-bold">Price: </span><span class="text-danger">$</span>13.00
+                      </div>
+                      
+                      <form action="">
+                        <div class="quantity mt-2">
+                          <a href="#" class="btn btn-outline-light text-dark minus"><i class="fa-solid fa-minus"></i></a>
+                          <input type="text" readonly value="1" class="text-center">
+                          <a href="#" class="btn btn-outline-light text-dark plus"><i class="fa-solid fa-plus"></i></a>
+                        </div>
 
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="exampleInputAddress" aria-describedby="emailHelp" placeholder="Enter Your Address">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                          <input type="text" class="form-control" id="exampleInputNumber" placeholder="Enter Your Moblie Number">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn border border-danger btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn border border-success btn-outline-success">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <a href="" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 <div class="food_item d-flex justify-content-evenly">
                   <img src="imgesfigma/hummus-2.jpg" class="humos" alt="hummus">
                   <div class="heading ms-2">
@@ -119,9 +207,52 @@
                     <span class="text-danger">$</span>16.00
                   </div>
                 </div>
+              </a>
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Hummus</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body popUp">
+                      <img src="imgesfigma/hummus-2.jpg" class="humos" alt="hummus">
+                      <p class="mt-2"><span class="fw-bold">Description:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, consequatur. Possimus quaerat architecto cupiditate esse consequatur eveniet totam, beatae sed aperiam ducimus blanditiis expedita vitae ratione, nesciunt debitis harum optio!</p>
+                      <div class="rate">
+                        <span class="fw-bold">Price: </span><span class="text-danger">$</span>16.00
+                      </div>
+                      
+                      <form action="">
+                        <div class="quantity mt-2">
+                          <a href="#" class="btn btn-outline-light text-dark minus"><i class="fa-solid fa-minus"></i></a>
+                          <input type="text" readonly value="1" class="text-center">
+                          <a href="#" class="btn btn-outline-light text-dark plus"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="exampleInputAddress" aria-describedby="emailHelp" placeholder="Enter Your Address">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                          <input type="text" class="form-control" id="exampleInputNumber" placeholder="Enter Your Moblie Number">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn border border-danger btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn border border-success btn-outline-success">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               </div>
+             
               <div class="col-md-6 d-flex flex-column gap-3 appetizer_right">
+                
+                <a href="" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                 <div class="food_item d-flex justify-content-evenly">
                   <img src="imgesfigma/baklava.jpg" alt="turkis food Baklava">
                   <div class="heading ms-2">
@@ -134,11 +265,53 @@
                     <span class="text-danger">$</span>11.00
                   </div>
                 </div>
+                </a>
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Baklava</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body popUp">
+                        <img src="imgesfigma/baklava.jpg" alt="turkis food Baklava">
+                        <p class="mt-2"><span class="fw-bold">Description:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, consequatur. Possimus quaerat architecto cupiditate esse consequatur eveniet totam, beatae sed aperiam ducimus blanditiis expedita vitae ratione, nesciunt debitis harum optio!</p>
+                        <div class="rate">
+                          <span class="fw-bold">Price: </span><span class="text-danger">$</span>11.00
+                        </div>
+                        
+                        <form action="">
+                          <div class="quantity mt-2">
+                            <a href="#" class="btn btn-outline-light text-dark minus"><i class="fa-solid fa-minus"></i></a>
+                            <input type="text" readonly value="1" class="text-center">
+                            <a href="#" class="btn btn-outline-light text-dark plus"><i class="fa-solid fa-plus"></i></a>
+                          </div>
+  
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="exampleInputAddress" placeholder="Enter Your Address">
+                            
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="exampleInputNumber" placeholder="Enter Your Moblie Number">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn border border-danger btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn border border-success btn-outline-success">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
 
+                <a href="" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal4">
                 <div class="food_item d-flex justify-content-evenly">
                   <img src="imgesfigma/food pic 5.jpg" alt="Commbo 2">
                   <div class="heading ms-2">
-                    <h6>Commbo 2</h6>
+                    <h6>Commbo Set 2</h6>
                     <p class="text-secondary">
                       Lorem ipsum dolor sit amet consectetur adipisicing 
                     </p>
@@ -147,7 +320,51 @@
                     <span class="text-danger">$</span>16.00
                   </div>
                 </div>
+                </a>
+
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Commbo Set 2</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body popUp">
+                        <img src="imgesfigma/food pic 5.jpg" alt="Commbo 2">
+                        <p class="mt-2"><span class="fw-bold">Description:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, consequatur. Possimus quaerat architecto cupiditate esse consequatur eveniet totam, beatae sed aperiam ducimus blanditiis expedita vitae ratione, nesciunt debitis harum optio!</p>
+                        <div class="rate">
+                          <span class="fw-bold">Price: </span><span class="text-danger">$</span>16.00
+                        </div>
+                        
+                        <form action="">
+                          <div class="quantity mt-2">
+                            <a href="#" class="btn btn-outline-light text-dark minus"><i class="fa-solid fa-minus"></i></a>
+                            <input type="text" readonly value="1" class="text-center">
+                            <a href="#" class="btn btn-outline-light text-dark plus"><i class="fa-solid fa-plus"></i></a>
+                          </div>
+  
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="exampleInputaddress" placeholder="Enter Your Address">
+                            
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="exampleInputnumber" placeholder="Enter Your Moblie Number">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn border border-danger btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn border border-success btn-outline-success">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+
               </div>
+
             </div>
           </div>
         </section>
@@ -157,11 +374,12 @@
           <div class="container">
             
             <div class="row gy-3">
-              
               <h2 class="text-center mt-5 pt-5">Main Dish</h2>
               <div class="col-md-6 d-flex flex-column gap-3 appetizer_left">
 
-                <div class="food_item d-flex justify-content-evenly">
+
+              <a href="" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                <div class="food_item d-flex justify-content-evenly" id="burger">
                   <img src="imgesfigma/burger.jpg" alt="Best burger ever">
                   <div class="heading ms-2">
                     <h6>Burger Hunter</h6>
@@ -173,7 +391,49 @@
                     <span class="text-danger">$</span>19.00
                   </div>
                 </div>
+              </a>
 
+              <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Burger Hunter</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body popUp">
+                      <img src="imgesfigma/burger.jpg" alt="Best burger ever">
+                      <p class="mt-2"><span class="fw-bold">Description:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, consequatur. Possimus quaerat architecto cupiditate esse consequatur eveniet totam, beatae sed aperiam ducimus blanditiis expedita vitae ratione, nesciunt debitis harum optio!</p>
+                      <div class="rate">
+                        <span class="fw-bold">Price: </span><span class="text-danger">$</span>19.00
+                      </div>
+                      
+                      <form action="">
+                        <div class="quantity mt-2">
+                          <a href="#" class="btn btn-outline-light text-dark minus"><i class="fa-solid fa-minus"></i></a>
+                          <input type="text" readonly value="1" class="text-center">
+                          <a href="#" class="btn btn-outline-light text-dark plus"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="exampleInputaddress" placeholder="Enter Your Address">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                          <input type="text" class="form-control" id="exampleInputnumber" placeholder="Enter Your Moblie Number">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn border border-danger btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn border border-success btn-outline-success">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal6">
                 <div class="food_item d-flex justify-content-evenly">
                   <img src="imgesfigma/sub sandwich.jpg" alt="Sub Sandwich">
                   <div class="heading ms-2">
@@ -186,13 +446,56 @@
                     <span class="text-danger">$</span>13.00
                   </div>
                 </div>
+              </a>
 
+              <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Sub Sandwich</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body popUp">
+                      <img src="imgesfigma/sub sandwich.jpg" alt="Sub Sandwich">
+                      <p class="mt-2"><span class="fw-bold">Description:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, consequatur. Possimus quaerat architecto cupiditate esse consequatur eveniet totam, beatae sed aperiam ducimus blanditiis expedita vitae ratione, nesciunt debitis harum optio!</p>
+                      <div class="rate">
+                        <span class="fw-bold">Price: </span><span class="text-danger">$</span>13.00
+                      </div>
+                      
+                      <form action="">
+                        <div class="quantity mt-2">
+                          <a href="#" class="btn btn-outline-light text-dark minus"><i class="fa-solid fa-minus"></i></a>
+                          <input type="text" readonly value="1" class="text-center">
+                          <a href="#" class="btn btn-outline-light text-dark plus"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="exampleInputaddress" placeholder="Enter Your Address">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                          <input type="text" class="form-control" id="exampleInputnumber" placeholder="Enter Your Moblie Number">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn border border-danger btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn border border-success btn-outline-success">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
               </div>
+              </div>
+
               <div class="col-md-6 d-flex flex-column gap-3 appetizer_right">
+
+              <a href="" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal7">
                 <div class="food_item d-flex justify-content-evenly">
                   <img src="imgesfigma/pizza img.jpg" alt="Special pizza">
                   <div class="heading ms-2">
-                    <h6>Baklava</h6>
+                    <h6>Pizza</h6>
                     <p class="text-secondary">
                       Lorem ipsum dolor sit amet consectetur adipisicing 
                     </p>
@@ -201,7 +504,49 @@
                     <span class="text-danger">$</span>11.00
                   </div>
                 </div>
+              </a>
 
+              <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Pizza</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body popUp">
+                      <img src="imgesfigma/pizza img.jpg" alt="Special pizza">
+                      <p class="mt-2"><span class="fw-bold">Description:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, consequatur. Possimus quaerat architecto cupiditate esse consequatur eveniet totam, beatae sed aperiam ducimus blanditiis expedita vitae ratione, nesciunt debitis harum optio!</p>
+                      <div class="rate">
+                        <span class="fw-bold">Price: </span><span class="text-danger">$</span>11.00
+                      </div>
+                      
+                      <form action="">
+                        <div class="quantity mt-2">
+                          <a href="#" class="btn btn-outline-light text-dark minus"><i class="fa-solid fa-minus"></i></a>
+                          <input type="text" readonly value="1" class="text-center">
+                          <a href="#" class="btn btn-outline-light text-dark plus"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="exampleInputaddress" placeholder="Enter Your Address">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                          <input type="text" class="form-control" id="exampleInputnumber" placeholder="Enter Your Moblie Number">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn border border-danger btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn border border-success btn-outline-success">Buy Now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="" class="text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal8">
                 <div class="food_item d-flex justify-content-evenly">
                   <img src="imgesfigma/sorma.jpg" alt="Sorma">
                   <div class="heading ms-2">
@@ -212,6 +557,46 @@
                   </div>
                   <div class="rate">
                     <span class="text-danger">$</span>16.00
+                  </div>
+                </div>
+              </a>
+
+              <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Shawarma</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body popUp">
+                      <img src="imgesfigma/sorma.jpg" alt="Sorma">
+                      <p class="mt-2"><span class="fw-bold">Description:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, consequatur. Possimus quaerat architecto cupiditate esse consequatur eveniet totam, beatae sed aperiam ducimus blanditiis expedita vitae ratione, nesciunt debitis harum optio!</p>
+                      <div class="rate">
+                        <span class="fw-bold">Price: </span><span class="text-danger">$</span>16.00
+                      </div>
+                      
+                      <form action="">
+                        <div class="quantity mt-2">
+                          <a href="#" class="btn btn-outline-light text-dark minus"><i class="fa-solid fa-minus"></i></a>
+                          <input type="text" readonly value="1" class="text-center">
+                          <a href="#" class="btn btn-outline-light text-dark plus"><i class="fa-solid fa-plus"></i></a>
+                        </div>
+
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Address</label>
+                          <input type="text" class="form-control" id="exampleInputaddress" placeholder="Enter Your Address">
+                          
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                          <input type="text" class="form-control" id="exampleInputnumber" placeholder="Enter Your Moblie Number">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn border border-danger btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn border border-success btn-outline-success">Buy Now</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -276,10 +661,10 @@
             <div class="col-md-3">
               <h6 class="fw-bold">Contact Us</h6>
               <ul class="list-group">
-                <li class=""><a href="#" class="text-decoration-none">example@email.com</a></li>
+                <li class=""><a href="#" class="text-decoration-none">foodi@gmail.com</a></li>
                 <li class=""><a href="#" class="text-decoration-none">+64 958 248 966</a></li>
                 <li class=""><a href="#" class="text-decoration-none">Social media</a></li>
-              </ul>
+              </ul> 
             </div>
           </div>
 

@@ -22,3 +22,19 @@ var swiper = new Swiper(".mySwiper", {
       },
     }  
 });
+
+
+$(document).ready(function () {
+  $(".plus").click(function(){
+    if($(this).prev().val()<20)
+    {
+      $(this).prev().val(+$(this).prev().val() + 1);
+    }
+  });
+  $(".minus").click(function(){
+    if($(this).next().val()<20)
+    {
+      $(this).next().val(+$(this).next().val() - 1);
+    }
+  });
+});

@@ -431,7 +431,13 @@ body{
   width: 100px;
   height: 90px;
   border-radius: 20%;
-} 
+}
+.popUp img{
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
+}
+
 .humos{
   width: 200px;
   height: 90px;
@@ -451,8 +457,19 @@ body{
   box-shadow: 2px 2px 20px rgba(110, 107, 107,0.50);
 }
 
+.quantity input{
+  width: 80px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(83, 236, 98);
+}
+.quantity i{
+  font-size: 9px;
+}
 
-
+.modal-header h1{
+  color: red;
+}
 
 @media (max-width: 990px){
   .hero_heading{
