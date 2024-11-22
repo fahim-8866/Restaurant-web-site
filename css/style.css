@@ -184,8 +184,8 @@ body{
 .Service_food{
   display: block;
   margin: auto;
-  padding: 20px;
-  height: 318px;
+  padding: 50px;
+  height: 518px;
 }
 .fa-heart{
   font-size: 20px;
@@ -231,6 +231,8 @@ body{
   position: absolute;
   right: -10px;
 }
+
+
 /* manu part  */
 
 
@@ -468,6 +470,19 @@ body{
 }
 
 .modal-header h1{
+  color: red;
+}
+
+#contact{
+  margin-top: 5%;
+  margin-bottom: 8%;
+}
+
+.payment img{
+  width: 50px;
+  
+}
+.fa-square-caret-left{
   color: red;
 }
 
