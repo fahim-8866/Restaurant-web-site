@@ -38,7 +38,11 @@
           </ul>
           <form class="d-flex search" role="search">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="bag" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+              <i class="fa-solid fa-bag-shopping cart-icon "></i>
+              <span class="count">0</span>
+              
+            </span>
           </form>
           <a href="contact.html" class="ContactNav_btn btn_active">
             <i class="fa-solid fa-phone-volume"></i>
@@ -47,6 +51,20 @@
         </div> 
       </div>
     </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 id="cartOffcanvasLabel">Card Items</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group cart-list mb-3">
+          
+        </ul>
+        <p class="fw-bold">Total: <span class="cart-total">$0.00</span></p>
+        <a href="" class="text-decoration-none buynow">Buy Now</a>
+      </div>
+    </div>
 
     <main>
     <section id="contact" class="">

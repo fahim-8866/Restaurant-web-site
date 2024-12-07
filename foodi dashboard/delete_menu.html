@@ -1,0 +1,21 @@
+<?php
+include "connection.php";
+
+if(isset($_GET['id']))
+{
+    $id = $_GET['id'];
+}
+
+$sql = "DELETE FROM student_record WHERE id = '$id'";
+$result = mysqli_query($conn, $sql);
+if(!$result)
+{
+    die("sql is not executed");
+}
+else
+{
+    header("location:banar.php?success= record deleted successfully");
+}
+
+
+?>

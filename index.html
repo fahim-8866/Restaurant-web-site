@@ -12,6 +12,9 @@
   
   <!-- swiper js cdn  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+   <!-- aos animation -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -38,7 +41,11 @@
           </ul>
           <form class="d-flex search" role="search">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="bag" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+              <i class="fa-solid fa-bag-shopping cart-icon "></i>
+              <span class="count">0</span>
+              
+            </span>
           </form>
           <a href="contact.html" class="ContactNav_btn btn_active">
             <i class="fa-solid fa-phone-volume"></i>
@@ -48,12 +55,28 @@
       </div>
     </nav>
 
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 id="cartOffcanvasLabel">Card Items</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group cart-list mb-3">
+          
+        </ul>
+        <p class="fw-bold">Total: <span class="cart-total">$0.00</span></p>
+        <a href="" class="text-decoration-none buynow">Buy Now</a>
+      </div>
+    </div>
+
     <main>
       
       <section id="hero">
         <div class="container">
           <div class="row gy-2 gx-3">
-            <div class="col-lg-5 hero_left">
+            <div class="col-lg-5 hero_left" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="1500">
               <div class="hero_heading">
                 <h1>Dive into Delights <br> Of Delectable <span>Food</span></h1>
                 <p class="mt-4">Where Each Plate Weaves a Story of Culinary <br> Mastery and Passionate Craftsmanship</p>
@@ -64,7 +87,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-7 hero_right p-5">
+            <div class="col-lg-7 hero_right p-5" data-aos="fade-left"
+            data-aos-offset="400" data-aos-easing="ease-in-sine" data-aos-duration="1500">
               <img src="imgesfigma/home.png" class="img-fluid person_img" alt="">
               <div class="hero_card d-flex gap-3 p-2">
                 <img src="imgesfigma/home-card 1.png" class="img-fluid card_img" alt="combo plater 2">
@@ -106,12 +130,16 @@
 
       <section id="popular_category">
         <div class="container">
-          <div class="category_head mt-5">
+          <div class="category_head mt-5" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <small class="text-danger d-block mb-2 text-uppercase">Customer Favorites</small>
             <h2>Popular Catagories</h2>
           </div>
           <div class="row gy-2 mt-5">
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
             <a href="menu.html#burger" class="text-decoration-none text-dark">
               <div class="card">
                 <img src="imgesfigma/food pic 1.png" class="img-fluid main_food" alt="burger image">
@@ -123,7 +151,8 @@
             </a>
             </div>
             
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-up"
+            data-aos-duration="1200" data-aos-offset="200">
               <a href="menu.html#burger" class="text-decoration-none text-dark">
                 <div class="card">
                   <img src="imgesfigma/food pic 2.png" class="img-fluid main_food" alt="Break Fast">
@@ -135,7 +164,8 @@
               </a>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-up" data-aos-offset="200"
+            data-aos-duration="1300">
               <a href="menu.html#desert" class="text-decoration-none text-dark">
                 <div class="card">
                   <img src="imgesfigma/food pic 3.png" class="img-fluid main_food" alt="Dessert">
@@ -147,7 +177,8 @@
               </a>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3" data-aos="fade-up" data-aos-offset="200"
+            data-aos-duration="1400">
               <a href="menu.html#burger" class="text-decoration-none text-dark">
                 <div class="card">
                   <img src="imgesfigma/food pic 4.png" class="img-fluid main_food" alt="Juices">
@@ -165,13 +196,18 @@
 
       <section id="manu">
         <div class="container pt-5">
-          <div class="manu_heading mt-5">
+          <div class="manu_heading mt-5" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <small class="text-danger d-block mb-2 text-uppercase">Special Dishes</small>
             <h1>Standout Dishes <br> From Our Menu</h1>
             
           </div>
 
-          <div class="swiper mySwiper mt-5 ">
+          <div class="swiper mySwiper mt-5 " data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          
+          data-aos-offset="200" data-aos-duration="1300">
             <div class="swiper-wrapper mb-5">
               <div class="swiper-slide">
                 <div class="card">
@@ -274,7 +310,9 @@
       <section id="Testimonial">
         <div class="container mt-5">
           <div class="row pt-5">
-            <div class="col-md-6 testimocnial_left">
+            <div class="col-md-6 testimocnial_left" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="1500">
               
                 <img src="imgesfigma/chef.png" class="img-fluid cheif_img" alt="cheif img">
                 
@@ -286,7 +324,9 @@
                   <img src="imgesfigma/emoji.png" class="img-fluid emoji" alt="samile emoji">
                 </div>
             </div>
-            <div class="col-md-6 testimonial_right">
+            <div class="col-md-6 testimonial_right" data-aos="fade-left"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine" data-aos-duration="1500">
               <small class="d-inline-block text-danger text-uppercase mt-5 mb-5">Testimonials</small>
               <h2 class="mb-4">What Our Customers <br> Say About Us</h2>
               <p class="mb-5">“I had the pleasure of dining at Foodi last night, and <br> I'm still raving about the experience! The attention to <br> detail in presentation and service was impeccable”</p>
@@ -315,16 +355,16 @@
         <div class="container mt-5 pt-5">
           <div class="row gy-5">
             <div class="col-lg-5">
-              <div class="service_heading">
+              <div class="service_heading" data-aos="zoom-in-down" data-aos-offset="200" data-aos-duration="1000">
                 <small class="d-inline-block text-danger text-uppercase mb-4">Our Story & Services</small>
                 <h2 class="mb-3">Our Culinary Journey <br> And Services</h2>
                 <p class="mb-5">Rooted in passion, we curate unforgettable dining <br> experiences and offer exceptional services, <br> blending culinary artistry with warm hospitality.</p>
-                <a href="#" class="explore_btn text-decoration-none d-inline-block">Explore</a>
+                <a href="#" class="explore_btn text-decoration-none d-inline-block" data-aos="zoom-in" data-aos-duration="1000">Explore</a>
               </div>
             </div>
             <div class="col-lg-7">
               <div class="row gy-3">
-                <div class="col-sm-6">
+                <div class="col-sm-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
                   <div class="service_element card">
                     <img src="imgesfigma/service 1.png" class="img-fluid service_img" alt="serce icone of food">
                     <div class="card-body service_body">
@@ -333,7 +373,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6 ">
+                <div class="col-sm-6 " data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
                   <div class="service_element card">
                     <img src="imgesfigma/service 2.png" class="img-fluid service_img" alt="serce icone of food">
                     <div class="card-body service_body">
@@ -343,7 +383,7 @@
                   </div>
                 </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-6" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
                   <div class="service_element card">
                     <img src="imgesfigma/service 3.png" class="img-fluid service_img" alt="serce icone of food">
                     <div class="card-body service_body">
@@ -352,7 +392,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200">
                   <div class="service_element card">
                     <img src="imgesfigma/service 1.png" class="img-fluid service_img" alt="serce icone of food">
                     <div class="card-body service_body">
@@ -431,6 +471,10 @@
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
