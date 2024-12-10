@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodi Cafe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- fontawsome link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- swiper js cdn  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+   <!-- aos animation -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="css/offers.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><span class="logo_f fw-bold">F</span><span class="fw-bold"> OODI</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar_items" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="offers.html">Offers</a>
+            </li>
+          </ul>
+          <form class="d-flex search" role="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="bag" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+              <i class="fa-solid fa-bag-shopping cart-icon "></i>
+              <span class="count">0</span>
+              
+            </span>
+          </form>
+          <a href="contact.html" class="ContactNav_btn btn_active">
+            <i class="fa-solid fa-phone-volume"></i>
+            Contact
+          </a>
+        </div> 
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 id="cartOffcanvasLabel">Card Items</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-group cart-list mb-3">
+          
+        </ul>
+        <p class="fw-bold">Total: <span class="cart-total">$0.00</span></p>
+        <a href="" class="text-decoration-none buynow">Buy Now</a>
+      </div>
+    </div>
+
+
+    <main>
+        <section id="offers">
+            <div class="container mt-5 pt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="imgesfigma/main food 1.png" class="img-fluid Service_food" alt="Egg vegi salad">
+                            <div class="card-body">
+                              <h4>Fattoush salad</h4>
+                              <p>Description of the item</p>
+                              <div class="rate d-flex ">
+                                <p ><del><span class="text-danger">$</span>24.00</del></p>
+                                <div class="new_rate">
+                                    <p class="ms-2"><span class="text-danger">$</span><span>18.00</span></p>
+                                </div>
+                                <div class="star">
+                                  <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            
+                          </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="imgesfigma/main food 2.png" class="img-fluid Service_food" alt="Egg vegi salad">
+                            <div class="card-body">
+                              <h4>Vegetable salad</h4>
+                              <p>Description of the item</p>
+                              <div class="rate d-flex ">
+                                <p ><del><span class="text-danger">$</span>26.00</del></p>
+                                <div class="new_rate">
+                                    <p class="ms-2"><span class="text-danger">$</span><span>20.00</span></p>
+                                </div>
+                                <div class="star">
+                                  <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            
+                          </div>
+                    </div>
+                </div>
+
+
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="imgesfigma/main food 3.png" class="img-fluid Service_food" alt="Egg vegi salad">
+                            <div class="card-body">
+                              <h4>Egg vegi salad</h4>
+                              <p>Description of the item</p>
+                              <div class="rate d-flex ">
+                                <p ><del><span class="text-danger">$</span>23.00</del></p>
+                                <div class="new_rate">
+                                    <p class="ms-2"><span class="text-danger">$</span><span>19.00</span></p>
+                                </div>
+                                <div class="star">
+                                  <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            
+                          </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img src="imgesfigma/main food 4.png" class="img-fluid Service_food" alt="Egg vegi salad">
+                            <div class="card-body">
+                              <h4>Mexican chopped salad</h4>
+                              <p>Description of the item</p>
+                              <div class="rate d-flex">
+                                <p><del><span class="text-danger">$</span>25.00</del></p>
+                                <div class="new_rate">
+                                    <p class="ms-2"><span class="text-danger">$</span><span>22.00</span></p>
+                                </div>
+                                <div class="star">
+                                  <i class="fa-solid fa-star text-warning"></i>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            
+                          </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+        <section id="footer">
+            <div class="container mt-5 mb-3">
+              <div class="row gy-4">
+    
+                <div class="col-md-3">
+                  <a href="#" class="text-decoration-none text-uppercase footer_logo fs-5">
+                    <span class="foooter_logo_f">f</span><span class="text-dark fw-bold"> oodi</span>
+                  </a>
+                  <p class="mt-3">Savor the artistry where <br>every dish is a culinary masterpiece</p>
+                  
+                </div>
+    
+                <div class="col-md-3 list">
+                  <h6 class="fw-bold">Useful links</h6>
+                  <ul class="list-group">
+                    
+                    <li class=""><a href="#" class="text-decoration-none">About us</a></li>
+                    <li class=""><a href="#" class="text-decoration-none">Events</a></li>
+                    <li class=""><a href="#" class="text-decoration-none">Blogs</a></li>
+                    <li class=""><a href="#" class="text-decoration-none">FAQ</a></li>
+                  </ul>
+                </div>
+    
+                <div class="col-md-3">
+                  <h6 class="fw-bold">Main Menu</h6>
+                  <ul class="list-group">
+                    <li class=""><a href="#hero" class="text-decoration-none">Home</a></li>
+                    <li class=""><a href="#manu" class="text-decoration-none">Offers</a></li>
+                    <li class=""><a href="#popular_category" class="text-decoration-none">Menus</a></li>
+                    <li class=""><a href="#services" class="text-decoration-none">Reservation</a></li>
+                  </ul>
+                </div>
+    
+                <div class="col-md-3">
+                  <h6 class="fw-bold">Contact Us</h6>
+                  <ul class="list-group">
+                    <li class=""><a href="#" class="text-decoration-none">example@email.com</a></li>
+                    <li class=""><a href="#" class="text-decoration-none">02 958 248 966</a></li>
+                    <li class=""><a href="#" class="text-decoration-none">Social media</a></li>
+                  </ul>
+                </div>
+              </div>
+    
+              <div class="social_media_icon d-flex justify-content-between">
+                <div class="icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="copy_right">
+                  Copyright &copy; 2023 Delta Creation| All rights reserved
+                </div>
+              </div>
+    
+            </div>
+          </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

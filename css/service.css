@@ -1,0 +1,40 @@
+.deliv_heading{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.deliv_heading h3{
+    color: red;
+}
+
+/* .fast_devli{
+    width: 150px;
+    padding: 10px;
+    margin: auto; 
+} */
+
+.card{
+   width: 60%;
+   padding: 20px;
+   margin: auto;
+}
+
+ 
+.service img {
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    margin: auto; 
+}
+
+.card{
+    height: 300px;
+    width: 500px;
+    transition: all 0.5s ease-in;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
